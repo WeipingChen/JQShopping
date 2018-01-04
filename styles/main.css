@@ -475,16 +475,23 @@
 
 #jnBrandContent li {
 	float: left;
-	height: 188px;
+	height: 164px;
 	overflow: hidden;
-	padding: 0 5px;
+	padding: 0 5px 24px;
 	position: relative;
 	width: 185px;
 }
 
+#jnBrandContent li>a{
+	display: block;
+	height: 100%;
+	position: relative;
+	width: 100%;
+}
 #jnBrandContent li img {
-	left: 5px;
+	left: 0;
 	position: absolute;
+	width: 100%;
 	top: 0;
 }
 
@@ -499,7 +506,7 @@
 	overflow: hidden;
 	position: absolute;
 	text-align: center;
-	width: 183px;
+	width: 185px;
 }
 
 #jnBrandContent li a {
@@ -511,14 +518,24 @@
 	text-decoration: none;
 }
 
-.imgMask {
+#jnBrandContent .imgMask {
 	background: #fff;
 	cursor: pointer;
 	filter:alpha(opacity=0);	
 	opacity: 0;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;	
 }
 
-.imgOver {
+.JS_live {
+	position: relative;
+	height:100%;
+}
+
+#jnBrandContent .imgOver {
 	background: url("../images/zoom.gif") no-repeat 50% 50% #fff;
 	filter: alpha(opcity=60);
 	opacity: 0.6;
